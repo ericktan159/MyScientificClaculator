@@ -1,0 +1,16 @@
+C:\AdminFileFolder\Source\repos\MyRepos\MyScintificCalculator\MyScintificCalculator\bin\Debug\netcoreapp3.1\MyScintificCalculator.exe
+C:\AdminFileFolder\Source\repos\MyRepos\MyScintificCalculator\MyScintificCalculator\bin\Debug\netcoreapp3.1\MyScintificCalculator.deps.json
+C:\AdminFileFolder\Source\repos\MyRepos\MyScintificCalculator\MyScintificCalculator\bin\Debug\netcoreapp3.1\MyScintificCalculator.runtimeconfig.json
+C:\AdminFileFolder\Source\repos\MyRepos\MyScintificCalculator\MyScintificCalculator\bin\Debug\netcoreapp3.1\MyScintificCalculator.runtimeconfig.dev.json
+C:\AdminFileFolder\Source\repos\MyRepos\MyScintificCalculator\MyScintificCalculator\bin\Debug\netcoreapp3.1\MyScintificCalculator.dll
+C:\AdminFileFolder\Source\repos\MyRepos\MyScintificCalculator\MyScintificCalculator\bin\Debug\netcoreapp3.1\MyScintificCalculator.pdb
+C:\AdminFileFolder\Source\repos\MyRepos\MyScintificCalculator\MyScintificCalculator\obj\Debug\netcoreapp3.1\MyScintificCalculator.csproj.AssemblyReference.cache
+C:\AdminFileFolder\Source\repos\MyRepos\MyScintificCalculator\MyScintificCalculator\obj\Debug\netcoreapp3.1\MyScintificCalculator.Form1.resources
+C:\AdminFileFolder\Source\repos\MyRepos\MyScintificCalculator\MyScintificCalculator\obj\Debug\netcoreapp3.1\MyScintificCalculator.csproj.GenerateResource.cache
+C:\AdminFileFolder\Source\repos\MyRepos\MyScintificCalculator\MyScintificCalculator\obj\Debug\netcoreapp3.1\MyScintificCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\AdminFileFolder\Source\repos\MyRepos\MyScintificCalculator\MyScintificCalculator\obj\Debug\netcoreapp3.1\MyScintificCalculator.AssemblyInfoInputs.cache
+C:\AdminFileFolder\Source\repos\MyRepos\MyScintificCalculator\MyScintificCalculator\obj\Debug\netcoreapp3.1\MyScintificCalculator.AssemblyInfo.cs
+C:\AdminFileFolder\Source\repos\MyRepos\MyScintificCalculator\MyScintificCalculator\obj\Debug\netcoreapp3.1\MyScintificCalculator.csproj.CoreCompileInputs.cache
+C:\AdminFileFolder\Source\repos\MyRepos\MyScintificCalculator\MyScintificCalculator\obj\Debug\netcoreapp3.1\MyScintificCalculator.dll
+C:\AdminFileFolder\Source\repos\MyRepos\MyScintificCalculator\MyScintificCalculator\obj\Debug\netcoreapp3.1\MyScintificCalculator.pdb
+C:\AdminFileFolder\Source\repos\MyRepos\MyScintificCalculator\MyScintificCalculator\obj\Debug\netcoreapp3.1\MyScintificCalculator.genruntimeconfig.cache
