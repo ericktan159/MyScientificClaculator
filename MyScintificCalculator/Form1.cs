@@ -103,6 +103,9 @@ namespace MyScintificCalculator
                     txtDisplay.Text = (Math.Pow(results, Double.Parse(txtDisplay.Text))).ToString();
                     break;
 
+
+                    // 
+
                     /*
                 case "Exp":
                     double i = Double.Parse(txtDisplay.Text);
