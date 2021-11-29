@@ -116,7 +116,7 @@ namespace MyScintificCalculator
                     break;
                     //*/
 
-            }
+            } 
         }
 
         private void arithmeticOperato(object sender, EventArgs e)

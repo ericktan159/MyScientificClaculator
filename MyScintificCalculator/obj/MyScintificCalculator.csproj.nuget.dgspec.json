@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\AdminFileFolder\\AlphaSource\\repos\\MyRepos\\MyScientificClaculator\\MyScintificCalculator\\MyScintificCalculator.csproj": {}
+    "E:\\AdminFileFolder\\AlphaSource\\repos\\MyRepos\\MyScintificCalculator\\MyScintificCalculator\\MyScintificCalculator.csproj": {}
   },
   "projects": {
-    "E:\\AdminFileFolder\\AlphaSource\\repos\\MyRepos\\MyScientificClaculator\\MyScintificCalculator\\MyScintificCalculator.csproj": {
+    "E:\\AdminFileFolder\\AlphaSource\\repos\\MyRepos\\MyScintificCalculator\\MyScintificCalculator\\MyScintificCalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\AdminFileFolder\\AlphaSource\\repos\\MyRepos\\MyScientificClaculator\\MyScintificCalculator\\MyScintificCalculator.csproj",
+        "projectUniqueName": "E:\\AdminFileFolder\\AlphaSource\\repos\\MyRepos\\MyScintificCalculator\\MyScintificCalculator\\MyScintificCalculator.csproj",
         "projectName": "MyScintificCalculator",
-        "projectPath": "E:\\AdminFileFolder\\AlphaSource\\repos\\MyRepos\\MyScientificClaculator\\MyScintificCalculator\\MyScintificCalculator.csproj",
+        "projectPath": "E:\\AdminFileFolder\\AlphaSource\\repos\\MyRepos\\MyScintificCalculator\\MyScintificCalculator\\MyScintificCalculator.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "E:\\AdminFileFolder\\AlphaSource\\repos\\MyRepos\\MyScientificClaculator\\MyScintificCalculator\\obj\\",
+        "outputPath": "E:\\AdminFileFolder\\AlphaSource\\repos\\MyRepos\\MyScintificCalculator\\MyScintificCalculator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
