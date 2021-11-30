@@ -127,5 +127,5 @@ namespace MyScintificCalculator
             txtDisplay.Text = "";
             lblShowOp.Text = System.Convert.ToString(results) + " " + operation;
         }
-    }
+    }   
 }

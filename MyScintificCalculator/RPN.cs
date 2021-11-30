@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Forms;
 
 namespace MyScintificCalculator
 {
@@ -230,8 +231,72 @@ namespace MyScintificCalculator
             return i;
         }
     }
+    public class MyException : Exception
+    {
+        public string type;
+    }
+    public class NegativeFactorialException : MyException
+    {
+        public NegativeFactorialException(int x)
+        {
+            this.type = "Math Error";
+            MessageBox.Show("Factorial(" + x + ") does not Exists", type, MessageBoxButtons.OK);
 
+        }
+    }
+    public class TgException : MyException
+    {
+        public TgException(double x)
+        {
+            this.type = "Math Error";
+            MessageBox.Show("Tg(" + x + ") does not Exists", type, MessageBoxButtons.OK);
 
+        }
+    }
+    public class SqrtException : MyException
+    {
+        public SqrtException(double x)
+        {
+            this.type = "Math Error";
+            MessageBox.Show("Sqrt(" + x + ") does not Exists", type, MessageBoxButtons.OK);
 
+        }
+    }
+    public class DividedByZeroException : MyException
+    {
+        public DividedByZeroException()
+        {
+            this.type = "Math Error";
+            MessageBox.Show("Division By zero is undifined", type, MessageBoxButtons.OK);
+
+        }
+    }
+
+    public class LogException : MyException
+    {
+        public LogException(double x)
+        {
+            this.type = "Math Error";
+            MessageBox.Show("Log(" + x + ") does not Exists", type, MessageBoxButtons.OK);
+
+        }
+    }
+    public class ArcSinCosException : MyException
+    {
+        public ArcSinCosException(double x)
+        {
+            this.type = "Math Error";
+            MessageBox.Show("Asin(" + x + ") or Asin(" + x + ") does not Exists", type, MessageBoxButtons.OK);
+        }
+    }
+    public class SyntaxException : MyException
+    {
+        public SyntaxException()
+        {
+            this.type = "Syntax Error";
+            MessageBox.Show("Somethings wrong in the input", type, MessageBoxButtons.OK);
+
+        }
+    }
 
 }
