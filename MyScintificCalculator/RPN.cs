@@ -7,7 +7,7 @@ namespace MyScintificCalculator
 {
     class RPN
     {
-        static public double rppnCalculate(string input)
+        static public double rpnCalculate(string input)
         {
             try{return double.Parse(GetExpression(input));}
             catch(Exception){return Counting(GetExpression(input));}
@@ -160,7 +160,7 @@ namespace MyScintificCalculator
                     }
                 }
                 try { return temp.Peek(); }
-                catch (Exception) { throw new Exception(); }//throw new SyntaxException(); }
+                catch (Exception) { throw new SyntaxException(); }
 
             } 
 
