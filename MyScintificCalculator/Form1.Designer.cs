@@ -69,17 +69,24 @@ namespace MyScintificCalculator
             this.btnCloseParenthesis = new System.Windows.Forms.Button();
             this.btnAns = new System.Windows.Forms.Button();
             this.tbInput = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnArrowRight = new System.Windows.Forms.Button();
             this.btnPi = new System.Windows.Forms.Button();
             this.btnLn = new System.Windows.Forms.Button();
             this.btnEulersConstant = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnArrowLeft = new System.Windows.Forms.Button();
             this.btnNthRoot = new System.Windows.Forms.Button();
             this.btnLogToThenBaseOf = new System.Windows.Forms.Button();
             this.btnXSquared = new System.Windows.Forms.Button();
             this.btnXCubed = new System.Windows.Forms.Button();
             this.btnReciprocal = new System.Windows.Forms.Button();
             this.btnScientificNotation = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.btnArrowDown = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.btnArrowUp = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,7 +101,7 @@ namespace MyScintificCalculator
             // 
             // btnBackspace
             // 
-            this.btnBackspace.Location = new System.Drawing.Point(340, 333);
+            this.btnBackspace.Location = new System.Drawing.Point(340, 381);
             this.btnBackspace.Name = "btnBackspace";
             this.btnBackspace.Size = new System.Drawing.Size(75, 24);
             this.btnBackspace.TabIndex = 2;
@@ -104,7 +111,7 @@ namespace MyScintificCalculator
             // 
             // btnNum7
             // 
-            this.btnNum7.Location = new System.Drawing.Point(14, 333);
+            this.btnNum7.Location = new System.Drawing.Point(14, 381);
             this.btnNum7.Name = "btnNum7";
             this.btnNum7.Size = new System.Drawing.Size(76, 23);
             this.btnNum7.TabIndex = 2;
@@ -114,7 +121,7 @@ namespace MyScintificCalculator
             // 
             // btnNum4
             // 
-            this.btnNum4.Location = new System.Drawing.Point(15, 362);
+            this.btnNum4.Location = new System.Drawing.Point(15, 410);
             this.btnNum4.Name = "btnNum4";
             this.btnNum4.Size = new System.Drawing.Size(76, 23);
             this.btnNum4.TabIndex = 2;
@@ -124,7 +131,7 @@ namespace MyScintificCalculator
             // 
             // btnNum1
             // 
-            this.btnNum1.Location = new System.Drawing.Point(15, 391);
+            this.btnNum1.Location = new System.Drawing.Point(15, 439);
             this.btnNum1.Name = "btnNum1";
             this.btnNum1.Size = new System.Drawing.Size(75, 23);
             this.btnNum1.TabIndex = 2;
@@ -134,7 +141,7 @@ namespace MyScintificCalculator
             // 
             // btnNum0
             // 
-            this.btnNum0.Location = new System.Drawing.Point(14, 420);
+            this.btnNum0.Location = new System.Drawing.Point(14, 468);
             this.btnNum0.Name = "btnNum0";
             this.btnNum0.Size = new System.Drawing.Size(76, 23);
             this.btnNum0.TabIndex = 2;
@@ -144,7 +151,7 @@ namespace MyScintificCalculator
             // 
             // btnNum8
             // 
-            this.btnNum8.Location = new System.Drawing.Point(96, 333);
+            this.btnNum8.Location = new System.Drawing.Point(96, 381);
             this.btnNum8.Name = "btnNum8";
             this.btnNum8.Size = new System.Drawing.Size(75, 23);
             this.btnNum8.TabIndex = 2;
@@ -154,7 +161,7 @@ namespace MyScintificCalculator
             // 
             // btnNum5
             // 
-            this.btnNum5.Location = new System.Drawing.Point(97, 362);
+            this.btnNum5.Location = new System.Drawing.Point(97, 410);
             this.btnNum5.Name = "btnNum5";
             this.btnNum5.Size = new System.Drawing.Size(75, 23);
             this.btnNum5.TabIndex = 2;
@@ -164,7 +171,7 @@ namespace MyScintificCalculator
             // 
             // btnNum2
             // 
-            this.btnNum2.Location = new System.Drawing.Point(97, 391);
+            this.btnNum2.Location = new System.Drawing.Point(97, 439);
             this.btnNum2.Name = "btnNum2";
             this.btnNum2.Size = new System.Drawing.Size(75, 23);
             this.btnNum2.TabIndex = 2;
@@ -174,7 +181,7 @@ namespace MyScintificCalculator
             // 
             // btnDot
             // 
-            this.btnDot.Location = new System.Drawing.Point(97, 420);
+            this.btnDot.Location = new System.Drawing.Point(97, 468);
             this.btnDot.Name = "btnDot";
             this.btnDot.Size = new System.Drawing.Size(75, 23);
             this.btnDot.TabIndex = 2;
@@ -184,7 +191,7 @@ namespace MyScintificCalculator
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(259, 332);
+            this.btnClear.Location = new System.Drawing.Point(259, 380);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 24);
             this.btnClear.TabIndex = 2;
@@ -194,7 +201,7 @@ namespace MyScintificCalculator
             // 
             // btnNum9
             // 
-            this.btnNum9.Location = new System.Drawing.Point(177, 333);
+            this.btnNum9.Location = new System.Drawing.Point(177, 381);
             this.btnNum9.Name = "btnNum9";
             this.btnNum9.Size = new System.Drawing.Size(75, 23);
             this.btnNum9.TabIndex = 2;
@@ -204,7 +211,7 @@ namespace MyScintificCalculator
             // 
             // btnNum6
             // 
-            this.btnNum6.Location = new System.Drawing.Point(178, 362);
+            this.btnNum6.Location = new System.Drawing.Point(178, 410);
             this.btnNum6.Name = "btnNum6";
             this.btnNum6.Size = new System.Drawing.Size(75, 23);
             this.btnNum6.TabIndex = 2;
@@ -214,7 +221,7 @@ namespace MyScintificCalculator
             // 
             // btnNum3
             // 
-            this.btnNum3.Location = new System.Drawing.Point(178, 391);
+            this.btnNum3.Location = new System.Drawing.Point(178, 439);
             this.btnNum3.Name = "btnNum3";
             this.btnNum3.Size = new System.Drawing.Size(75, 23);
             this.btnNum3.TabIndex = 2;
@@ -224,7 +231,7 @@ namespace MyScintificCalculator
             // 
             // btnEqual
             // 
-            this.btnEqual.Location = new System.Drawing.Point(340, 420);
+            this.btnEqual.Location = new System.Drawing.Point(340, 468);
             this.btnEqual.Name = "btnEqual";
             this.btnEqual.Size = new System.Drawing.Size(75, 23);
             this.btnEqual.TabIndex = 2;
@@ -234,7 +241,7 @@ namespace MyScintificCalculator
             // 
             // btnPlus
             // 
-            this.btnPlus.Location = new System.Drawing.Point(260, 391);
+            this.btnPlus.Location = new System.Drawing.Point(260, 439);
             this.btnPlus.Name = "btnPlus";
             this.btnPlus.Size = new System.Drawing.Size(75, 23);
             this.btnPlus.TabIndex = 2;
@@ -244,7 +251,7 @@ namespace MyScintificCalculator
             // 
             // btnMinus
             // 
-            this.btnMinus.Location = new System.Drawing.Point(341, 391);
+            this.btnMinus.Location = new System.Drawing.Point(341, 439);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.Size = new System.Drawing.Size(75, 23);
             this.btnMinus.TabIndex = 2;
@@ -254,7 +261,7 @@ namespace MyScintificCalculator
             // 
             // btnMultiply
             // 
-            this.btnMultiply.Location = new System.Drawing.Point(259, 362);
+            this.btnMultiply.Location = new System.Drawing.Point(259, 410);
             this.btnMultiply.Name = "btnMultiply";
             this.btnMultiply.Size = new System.Drawing.Size(75, 23);
             this.btnMultiply.TabIndex = 2;
@@ -264,7 +271,7 @@ namespace MyScintificCalculator
             // 
             // btnDivide
             // 
-            this.btnDivide.Location = new System.Drawing.Point(340, 362);
+            this.btnDivide.Location = new System.Drawing.Point(340, 410);
             this.btnDivide.Name = "btnDivide";
             this.btnDivide.Size = new System.Drawing.Size(75, 23);
             this.btnDivide.TabIndex = 2;
@@ -319,7 +326,7 @@ namespace MyScintificCalculator
             // 
             // btnArcSin
             // 
-            this.btnArcSin.Location = new System.Drawing.Point(15, 196);
+            this.btnArcSin.Location = new System.Drawing.Point(15, 244);
             this.btnArcSin.Name = "btnArcSin";
             this.btnArcSin.Size = new System.Drawing.Size(75, 23);
             this.btnArcSin.TabIndex = 2;
@@ -329,7 +336,7 @@ namespace MyScintificCalculator
             // 
             // btnLog10
             // 
-            this.btnLog10.Location = new System.Drawing.Point(258, 196);
+            this.btnLog10.Location = new System.Drawing.Point(260, 243);
             this.btnLog10.Name = "btnLog10";
             this.btnLog10.Size = new System.Drawing.Size(75, 24);
             this.btnLog10.TabIndex = 2;
@@ -339,7 +346,7 @@ namespace MyScintificCalculator
             // 
             // btnArcCos
             // 
-            this.btnArcCos.Location = new System.Drawing.Point(96, 196);
+            this.btnArcCos.Location = new System.Drawing.Point(96, 244);
             this.btnArcCos.Name = "btnArcCos";
             this.btnArcCos.Size = new System.Drawing.Size(75, 23);
             this.btnArcCos.TabIndex = 2;
@@ -349,7 +356,7 @@ namespace MyScintificCalculator
             // 
             // btnSqrt
             // 
-            this.btnSqrt.Location = new System.Drawing.Point(258, 167);
+            this.btnSqrt.Location = new System.Drawing.Point(260, 215);
             this.btnSqrt.Name = "btnSqrt";
             this.btnSqrt.Size = new System.Drawing.Size(75, 23);
             this.btnSqrt.TabIndex = 2;
@@ -359,7 +366,7 @@ namespace MyScintificCalculator
             // 
             // btnSin
             // 
-            this.btnSin.Location = new System.Drawing.Point(15, 167);
+            this.btnSin.Location = new System.Drawing.Point(15, 215);
             this.btnSin.Name = "btnSin";
             this.btnSin.Size = new System.Drawing.Size(75, 23);
             this.btnSin.TabIndex = 2;
@@ -369,7 +376,7 @@ namespace MyScintificCalculator
             // 
             // btnArcTan
             // 
-            this.btnArcTan.Location = new System.Drawing.Point(177, 196);
+            this.btnArcTan.Location = new System.Drawing.Point(177, 244);
             this.btnArcTan.Name = "btnArcTan";
             this.btnArcTan.Size = new System.Drawing.Size(75, 23);
             this.btnArcTan.TabIndex = 2;
@@ -379,7 +386,7 @@ namespace MyScintificCalculator
             // 
             // btnCos
             // 
-            this.btnCos.Location = new System.Drawing.Point(96, 167);
+            this.btnCos.Location = new System.Drawing.Point(96, 215);
             this.btnCos.Name = "btnCos";
             this.btnCos.Size = new System.Drawing.Size(75, 23);
             this.btnCos.TabIndex = 2;
@@ -389,7 +396,7 @@ namespace MyScintificCalculator
             // 
             // btnExponent
             // 
-            this.btnExponent.Location = new System.Drawing.Point(341, 304);
+            this.btnExponent.Location = new System.Drawing.Point(341, 352);
             this.btnExponent.Name = "btnExponent";
             this.btnExponent.Size = new System.Drawing.Size(75, 23);
             this.btnExponent.TabIndex = 2;
@@ -399,7 +406,7 @@ namespace MyScintificCalculator
             // 
             // btnTan
             // 
-            this.btnTan.Location = new System.Drawing.Point(177, 167);
+            this.btnTan.Location = new System.Drawing.Point(177, 215);
             this.btnTan.Name = "btnTan";
             this.btnTan.Size = new System.Drawing.Size(75, 23);
             this.btnTan.TabIndex = 2;
@@ -409,7 +416,7 @@ namespace MyScintificCalculator
             // 
             // btnFactorial
             // 
-            this.btnFactorial.Location = new System.Drawing.Point(179, 226);
+            this.btnFactorial.Location = new System.Drawing.Point(179, 274);
             this.btnFactorial.Name = "btnFactorial";
             this.btnFactorial.Size = new System.Drawing.Size(75, 23);
             this.btnFactorial.TabIndex = 2;
@@ -421,13 +428,13 @@ namespace MyScintificCalculator
             // 
             this.tbResult.Location = new System.Drawing.Point(15, 73);
             this.tbResult.Name = "tbResult";
-            this.tbResult.Size = new System.Drawing.Size(399, 23);
+            this.tbResult.Size = new System.Drawing.Size(401, 23);
             this.tbResult.TabIndex = 5;
             this.tbResult.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbResult_KeyPress);
             // 
             // btnOpenParenthesis
             // 
-            this.btnOpenParenthesis.Location = new System.Drawing.Point(15, 304);
+            this.btnOpenParenthesis.Location = new System.Drawing.Point(15, 352);
             this.btnOpenParenthesis.Name = "btnOpenParenthesis";
             this.btnOpenParenthesis.Size = new System.Drawing.Size(75, 23);
             this.btnOpenParenthesis.TabIndex = 6;
@@ -437,7 +444,7 @@ namespace MyScintificCalculator
             // 
             // btnCloseParenthesis
             // 
-            this.btnCloseParenthesis.Location = new System.Drawing.Point(96, 304);
+            this.btnCloseParenthesis.Location = new System.Drawing.Point(96, 352);
             this.btnCloseParenthesis.Name = "btnCloseParenthesis";
             this.btnCloseParenthesis.Size = new System.Drawing.Size(75, 23);
             this.btnCloseParenthesis.TabIndex = 7;
@@ -447,7 +454,7 @@ namespace MyScintificCalculator
             // 
             // btnAns
             // 
-            this.btnAns.Location = new System.Drawing.Point(259, 419);
+            this.btnAns.Location = new System.Drawing.Point(259, 467);
             this.btnAns.Name = "btnAns";
             this.btnAns.Size = new System.Drawing.Size(75, 24);
             this.btnAns.TabIndex = 9;
@@ -459,25 +466,25 @@ namespace MyScintificCalculator
             // 
             this.tbInput.Location = new System.Drawing.Point(15, 44);
             this.tbInput.Name = "tbInput";
-            this.tbInput.Size = new System.Drawing.Size(399, 23);
+            this.tbInput.Size = new System.Drawing.Size(401, 23);
             this.tbInput.TabIndex = 10;
             this.tbInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbInput_KeyDown);
             this.tbInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbInput_KeyPress);
             this.tbInput.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbInput_KeyUp);
             // 
-            // button1
+            // btnArrowRight
             // 
-            this.button1.Location = new System.Drawing.Point(97, 275);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "|>";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnArrowRight.Location = new System.Drawing.Point(259, 157);
+            this.btnArrowRight.Name = "btnArrowRight";
+            this.btnArrowRight.Size = new System.Drawing.Size(75, 23);
+            this.btnArrowRight.TabIndex = 11;
+            this.btnArrowRight.Text = "|>";
+            this.btnArrowRight.UseVisualStyleBackColor = true;
+            this.btnArrowRight.Click += new System.EventHandler(this.btnArrow_clicked);
             // 
             // btnPi
             // 
-            this.btnPi.Location = new System.Drawing.Point(177, 304);
+            this.btnPi.Location = new System.Drawing.Point(177, 352);
             this.btnPi.Name = "btnPi";
             this.btnPi.Size = new System.Drawing.Size(75, 23);
             this.btnPi.TabIndex = 13;
@@ -487,7 +494,7 @@ namespace MyScintificCalculator
             // 
             // btnLn
             // 
-            this.btnLn.Location = new System.Drawing.Point(260, 225);
+            this.btnLn.Location = new System.Drawing.Point(260, 273);
             this.btnLn.Name = "btnLn";
             this.btnLn.Size = new System.Drawing.Size(75, 23);
             this.btnLn.TabIndex = 14;
@@ -497,7 +504,7 @@ namespace MyScintificCalculator
             // 
             // btnEulersConstant
             // 
-            this.btnEulersConstant.Location = new System.Drawing.Point(257, 304);
+            this.btnEulersConstant.Location = new System.Drawing.Point(260, 352);
             this.btnEulersConstant.Name = "btnEulersConstant";
             this.btnEulersConstant.Size = new System.Drawing.Size(75, 23);
             this.btnEulersConstant.TabIndex = 15;
@@ -505,19 +512,19 @@ namespace MyScintificCalculator
             this.btnEulersConstant.UseVisualStyleBackColor = true;
             this.btnEulersConstant.Click += new System.EventHandler(this.calculatorButtonsClicked);
             // 
-            // button2
+            // btnArrowLeft
             // 
-            this.button2.Location = new System.Drawing.Point(16, 275);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "<|";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnArrowLeft.Location = new System.Drawing.Point(96, 157);
+            this.btnArrowLeft.Name = "btnArrowLeft";
+            this.btnArrowLeft.Size = new System.Drawing.Size(75, 23);
+            this.btnArrowLeft.TabIndex = 16;
+            this.btnArrowLeft.Text = "<|";
+            this.btnArrowLeft.UseVisualStyleBackColor = true;
+            this.btnArrowLeft.Click += new System.EventHandler(this.btnArrow_clicked);
             // 
             // btnNthRoot
             // 
-            this.btnNthRoot.Location = new System.Drawing.Point(339, 167);
+            this.btnNthRoot.Location = new System.Drawing.Point(341, 215);
             this.btnNthRoot.Name = "btnNthRoot";
             this.btnNthRoot.Size = new System.Drawing.Size(75, 23);
             this.btnNthRoot.TabIndex = 17;
@@ -527,7 +534,7 @@ namespace MyScintificCalculator
             // 
             // btnLogToThenBaseOf
             // 
-            this.btnLogToThenBaseOf.Location = new System.Drawing.Point(341, 197);
+            this.btnLogToThenBaseOf.Location = new System.Drawing.Point(341, 244);
             this.btnLogToThenBaseOf.Name = "btnLogToThenBaseOf";
             this.btnLogToThenBaseOf.Size = new System.Drawing.Size(74, 23);
             this.btnLogToThenBaseOf.TabIndex = 18;
@@ -537,7 +544,7 @@ namespace MyScintificCalculator
             // 
             // btnXSquared
             // 
-            this.btnXSquared.Location = new System.Drawing.Point(15, 226);
+            this.btnXSquared.Location = new System.Drawing.Point(15, 274);
             this.btnXSquared.Name = "btnXSquared";
             this.btnXSquared.Size = new System.Drawing.Size(75, 23);
             this.btnXSquared.TabIndex = 19;
@@ -547,7 +554,7 @@ namespace MyScintificCalculator
             // 
             // btnXCubed
             // 
-            this.btnXCubed.Location = new System.Drawing.Point(96, 226);
+            this.btnXCubed.Location = new System.Drawing.Point(96, 274);
             this.btnXCubed.Name = "btnXCubed";
             this.btnXCubed.Size = new System.Drawing.Size(75, 23);
             this.btnXCubed.TabIndex = 20;
@@ -557,7 +564,7 @@ namespace MyScintificCalculator
             // 
             // btnReciprocal
             // 
-            this.btnReciprocal.Location = new System.Drawing.Point(341, 225);
+            this.btnReciprocal.Location = new System.Drawing.Point(341, 273);
             this.btnReciprocal.Name = "btnReciprocal";
             this.btnReciprocal.Size = new System.Drawing.Size(75, 23);
             this.btnReciprocal.TabIndex = 21;
@@ -567,7 +574,7 @@ namespace MyScintificCalculator
             // 
             // btnScientificNotation
             // 
-            this.btnScientificNotation.Location = new System.Drawing.Point(178, 420);
+            this.btnScientificNotation.Location = new System.Drawing.Point(178, 468);
             this.btnScientificNotation.Name = "btnScientificNotation";
             this.btnScientificNotation.Size = new System.Drawing.Size(75, 23);
             this.btnScientificNotation.TabIndex = 22;
@@ -575,22 +582,89 @@ namespace MyScintificCalculator
             this.btnScientificNotation.UseVisualStyleBackColor = true;
             this.btnScientificNotation.Click += new System.EventHandler(this.calculatorButtonsClicked);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(96, 186);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 23;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // btnArrowDown
+            // 
+            this.btnArrowDown.Location = new System.Drawing.Point(177, 186);
+            this.btnArrowDown.Name = "btnArrowDown";
+            this.btnArrowDown.Size = new System.Drawing.Size(75, 23);
+            this.btnArrowDown.TabIndex = 24;
+            this.btnArrowDown.Text = "Down";
+            this.btnArrowDown.UseVisualStyleBackColor = true;
+            this.btnArrowDown.Click += new System.EventHandler(this.btnArrow_clicked);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(260, 186);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 25;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(97, 128);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 26;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(259, 128);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 27;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // btnArrowUp
+            // 
+            this.btnArrowUp.Location = new System.Drawing.Point(179, 128);
+            this.btnArrowUp.Name = "btnArrowUp";
+            this.btnArrowUp.Size = new System.Drawing.Size(75, 23);
+            this.btnArrowUp.TabIndex = 28;
+            this.btnArrowUp.Text = "Up";
+            this.btnArrowUp.UseVisualStyleBackColor = true;
+            this.btnArrowUp.Click += new System.EventHandler(this.btnArrow_clicked);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(179, 157);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 29;
+            this.button9.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(439, 467);
+            this.ClientSize = new System.Drawing.Size(439, 576);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.btnArrowUp);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnArrowDown);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.btnScientificNotation);
             this.Controls.Add(this.btnReciprocal);
             this.Controls.Add(this.btnXCubed);
             this.Controls.Add(this.btnXSquared);
             this.Controls.Add(this.btnNthRoot);
             this.Controls.Add(this.btnLogToThenBaseOf);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnArrowLeft);
             this.Controls.Add(this.btnEulersConstant);
             this.Controls.Add(this.btnLn);
             this.Controls.Add(this.btnPi);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnArrowRight);
             this.Controls.Add(this.tbInput);
             this.Controls.Add(this.btnAns);
             this.Controls.Add(this.btnCloseParenthesis);
@@ -678,17 +752,24 @@ namespace MyScintificCalculator
         private System.Windows.Forms.Button btnCloseParenthesis;
         private System.Windows.Forms.Button btnAns;
         private System.Windows.Forms.TextBox tbInput;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnArrowRight;
         private System.Windows.Forms.Button btnPi;
         private System.Windows.Forms.Button btnLn;
         private System.Windows.Forms.Button btnEulersConstant;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnArrowLeft;
         private System.Windows.Forms.Button btnNthRoot;
         private System.Windows.Forms.Button btnLogToThenBaseOf;
         private System.Windows.Forms.Button btnXSquared;
         private System.Windows.Forms.Button btnXCubed;
         private System.Windows.Forms.Button btnReciprocal;
         private System.Windows.Forms.Button btnScientificNotation;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnArrowDown;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnArrowUp;
+        private System.Windows.Forms.Button button9;
     }
 }
 

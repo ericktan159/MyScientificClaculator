@@ -17,6 +17,9 @@ namespace MyScintificCalculator
         Calculator calculator;
         int cursorIndex;
         string newText;
+        List<String> InputHistory = new List<string>();
+        int historyPointer = 0;
+        bool isNewinput = false;
 
         public Form1()
         {
@@ -184,8 +187,8 @@ namespace MyScintificCalculator
             }
             else if (isButtonAns(btn_))
             {
-                cursorOffset = tbResult.Text.Length;
-                return tbResult.Text;
+                cursorOffset = tbResult.Text.Length + 2;
+                return (tbResult.Text != "") ? "(" + tbResult.Text + ")" : "";
             }
             else
             {
@@ -199,7 +202,17 @@ namespace MyScintificCalculator
             string result = calculator.calculate(tbInput.Text, out Color color);
             tbResult.ForeColor = color;
             tbResult.Text = result;
+            if(result != "invalid syntax")
+            {
+                InputHistory.Add(tbInput.Text);
+                historyPointer = InputHistory.Count;
+            }
+
+            isNewinput = true;
+            
         }
+
+
 
         private String insertUserInput(int cursorIndex, Button btn_, ref int cursorOffset)
         {
@@ -223,14 +236,85 @@ namespace MyScintificCalculator
                 return tbInput.Text.Substring(0, cursorIndex) + returnButtonStringDisplay(btn_, ref cursorOffset) + tbInput.Text.Substring(cursorIndex, tbInput.Text.Length - cursorIndex);
             }
         }
+        private void btnArrow_clicked(object sender, EventArgs e)
+        {
+            Button btn_ = (Button)sender;
+            ActiveControl = tbInput;
+
+            if ((btn_ == btnArrowLeft) && (tbInput.SelectionStart != 0))
+            {
+                tbInput.SelectionStart -= 1;
+            }
+            else if (btn_ == btnArrowRight)
+            {
+                tbInput.SelectionStart += 1;
+            }
+            else if ((btn_ == btnArrowUp))
+            {
+                if ((historyPointer > 0))
+                {
+                    historyPointer--;
+                    tbInput.Text = InputHistory[historyPointer];
+                }
+                else if ((historyPointer == 0) && (InputHistory.Count != 0))
+                {
+                    historyPointer = InputHistory.Count -1;
+                    tbInput.Text = InputHistory[historyPointer];
+                }
+                
+                tbInput.SelectionStart = tbInput.Text.Length;
+                //MessageBox.Show(historyPointer.ToString());
+            }
+            else if(btn_ == btnArrowDown)
+            {
+                if(historyPointer < InputHistory.Count -1)
+                {
+                    //historyPointer = 0;
+                    historyPointer++;
+                    tbInput.Text = InputHistory[historyPointer];
+
+                    //MessageBox.Show("if");
+                    
+                }
+                else if((historyPointer == InputHistory.Count - 1) || (historyPointer == InputHistory.Count))
+                {
+                    historyPointer = 0;
+                    tbInput.Text = InputHistory[historyPointer];
+
+                }
+                else
+                {
+                    //historyPointer++;
+                    //MessageBox.Show("else");
+                }
+                //MessageBox.Show(historyPointer.ToString());
+                tbInput.SelectionStart = tbInput.Text.Length;
+            }
+
+
+        }
 
         private void on_click_clear(object sender, EventArgs e)
+        {
+            clearTBInput();
+        }
+
+        private void clearTBInput()
         {
             tbInput.Clear();
             ActiveControl = tbInput;
         }
 
-
+        private void ifNewInput()
+        {
+            if (isNewinput)
+            {
+                clearTBInput();
+                isNewinput = false;
+                
+            }
+            historyPointer = InputHistory.Count;
+        }
         private void on_click_equal(object sender, EventArgs e)
         {
             getResult();
@@ -241,11 +325,15 @@ namespace MyScintificCalculator
             Button btn_ = (Button)sender;
             int cursorOffset = 0;
 
+            ifNewInput();
+
             cursorIndex = tbInput.SelectionStart;
             tbInput.Text = insertUserInput(cursorIndex, btn_, ref cursorOffset);
             tbInput.SelectionStart = cursorIndex + cursorOffset;
             tbInput.SelectionLength = 0;
             ActiveControl = tbInput;
+
+            
         }
 
 
@@ -258,9 +346,12 @@ namespace MyScintificCalculator
 
         private void tbInput_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if((!char.IsDigit(e.KeyChar)) && (e.KeyChar != '^') && (e.KeyChar != '*') && (e.KeyChar != '/') && (e.KeyChar != '+') && (e.KeyChar != '-')
+            ifNewInput();
+
+            if ((!char.IsDigit(e.KeyChar)) && (e.KeyChar != '^') && (e.KeyChar != '*') && (e.KeyChar != '/') && (e.KeyChar != '+') && (e.KeyChar != '-')
                 && (e.KeyChar.ToString() != ".") && (e.KeyChar != '(') && (e.KeyChar != ')') && (e.KeyChar != (char)Keys.Back))
             {
+                
                 e.Handled = true;
             }
 
@@ -290,9 +381,9 @@ namespace MyScintificCalculator
         
         private void button2_Click(object sender, EventArgs e)
         {
-            ActiveControl = tbInput;
 
-            tbInput.SelectionStart -= 1;
         }
+
+        
     }
 }
