@@ -144,13 +144,13 @@ namespace MyScintificCalculator
             }
             else if (isButtonLogToTheBaseOf(btn_))
             {
-                cursorOffset = 8;
-                return "log[10]()";
+                cursorOffset = 4;
+                return "log[]()";
             }
             else if (isButtonNthRoot(btn_))
             {
-                cursorOffset = 5;
-                return "√[2]()";
+                cursorOffset = 2;
+                return "√[]()";
             }
             else if(isButtonFactorial(btn_))
             {
@@ -242,11 +242,10 @@ namespace MyScintificCalculator
             int cursorOffset = 0;
 
             cursorIndex = tbInput.SelectionStart;
-            newText = insertUserInput(cursorIndex, btn_, ref cursorOffset);//tbInput.Text.Substring(0, cursorIndex) + returnButtonStringDisplay(btn_, ref cursorOffset) + tbInput.Text.Substring(cursorIndex, tbInput.Text.Length - cursorIndex);
-            tbInput.Text = newText;
-            ActiveControl = tbInput;
+            tbInput.Text = insertUserInput(cursorIndex, btn_, ref cursorOffset);
             tbInput.SelectionStart = cursorIndex + cursorOffset;
             tbInput.SelectionLength = 0;
+            ActiveControl = tbInput;
         }
 
 
@@ -283,18 +282,17 @@ namespace MyScintificCalculator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(Math.Sin((double.Parse(textBoxTest.Text))*(Math.PI/180)).ToString());
-            MessageBox.Show(Math.PI.ToString());
-            MessageBox.Show(Math.Log(Math.E).ToString());
-            MessageBox.Show(("e" == "℮").ToString());
-            MessageBox.Show((btnEulersConstant.Text == "℮").ToString());
+            ActiveControl = tbInput;
+
+            tbInput.SelectionStart += 1;
+
         }
         
         private void button2_Click(object sender, EventArgs e)
         {
-            tbInput.Text = "Hello";
-            String str1 = "Hello";
-            
+            ActiveControl = tbInput;
+
+            tbInput.SelectionStart -= 1;
         }
     }
 }

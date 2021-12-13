@@ -70,7 +70,6 @@ namespace MyScintificCalculator
             this.btnAns = new System.Windows.Forms.Button();
             this.tbInput = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBoxTest = new System.Windows.Forms.TextBox();
             this.btnPi = new System.Windows.Forms.Button();
             this.btnLn = new System.Windows.Forms.Button();
             this.btnEulersConstant = new System.Windows.Forms.Button();
@@ -99,7 +98,7 @@ namespace MyScintificCalculator
             this.btnBackspace.Name = "btnBackspace";
             this.btnBackspace.Size = new System.Drawing.Size(75, 24);
             this.btnBackspace.TabIndex = 2;
-            this.btnBackspace.Text = "<--";
+            this.btnBackspace.Text = "Del";
             this.btnBackspace.UseVisualStyleBackColor = true;
             this.btnBackspace.Click += new System.EventHandler(this.calculatorButtonsClicked);
             // 
@@ -281,7 +280,7 @@ namespace MyScintificCalculator
             this.viewToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(913, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(439, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -468,21 +467,13 @@ namespace MyScintificCalculator
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(643, 225);
+            this.button1.Location = new System.Drawing.Point(97, 275);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(194, 23);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 11;
-            this.button1.Text = "just for Debuging purposes";
+            this.button1.Text = "|>";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBoxTest
-            // 
-            this.textBoxTest.Location = new System.Drawing.Point(544, 258);
-            this.textBoxTest.Name = "textBoxTest";
-            this.textBoxTest.Size = new System.Drawing.Size(100, 23);
-            this.textBoxTest.TabIndex = 12;
-            this.textBoxTest.Text = "90";
             // 
             // btnPi
             // 
@@ -516,11 +507,11 @@ namespace MyScintificCalculator
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(643, 180);
+            this.button2.Location = new System.Drawing.Point(16, 275);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 16;
-            this.button2.Text = "button2";
+            this.button2.Text = "<|";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -588,7 +579,7 @@ namespace MyScintificCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(913, 467);
+            this.ClientSize = new System.Drawing.Size(439, 467);
             this.Controls.Add(this.btnScientificNotation);
             this.Controls.Add(this.btnReciprocal);
             this.Controls.Add(this.btnXCubed);
@@ -599,7 +590,6 @@ namespace MyScintificCalculator
             this.Controls.Add(this.btnEulersConstant);
             this.Controls.Add(this.btnLn);
             this.Controls.Add(this.btnPi);
-            this.Controls.Add(this.textBoxTest);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tbInput);
             this.Controls.Add(this.btnAns);
@@ -689,7 +679,6 @@ namespace MyScintificCalculator
         private System.Windows.Forms.Button btnAns;
         private System.Windows.Forms.TextBox tbInput;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBoxTest;
         private System.Windows.Forms.Button btnPi;
         private System.Windows.Forms.Button btnLn;
         private System.Windows.Forms.Button btnEulersConstant;
