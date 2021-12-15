@@ -276,7 +276,7 @@ namespace MyScintificCalculator
                     //MessageBox.Show("if");
                     
                 }
-                else if((historyPointer == InputHistory.Count - 1) || (historyPointer == InputHistory.Count))
+                else if(((historyPointer == InputHistory.Count - 1) || (historyPointer == InputHistory.Count)) && (InputHistory.Count != 0))
                 {
                     historyPointer = 0;
                     tbInput.Text = InputHistory[historyPointer];
@@ -379,10 +379,7 @@ namespace MyScintificCalculator
 
         }
         
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         
     }
